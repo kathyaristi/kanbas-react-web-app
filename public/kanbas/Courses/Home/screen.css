@@ -71,7 +71,7 @@
   }
 
   .status a{
-    color: inherit; /* Use the color inherited from the parent element */
+ color: inherit; /* Use the color inherited from the parent element */
     text-decoration: none; /* Remove underlines */
 }
 
