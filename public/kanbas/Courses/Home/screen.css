@@ -1,0 +1,97 @@
+.btn, .Button, .ui-button {
+    background: #f5f5f5;
+    color: #2d3b45;
+    border: 1px solid;
+    border-color: #c7cdd1;
+    border-radius: 3px;
+    transition: background-color .2s ease-in-out;
+    display: inline-block;
+    position: relative;
+    padding: 8px 14px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    text-decoration: none;
+    overflow: hidden;
+    text-shadow: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.module{
+    background-color: red;
+}
+
+.third-col{
+    padding-right: 50px;
+}
+
+.navbar-title{
+    text-align: center;
+
+}
+.navbar {
+    background-color: #000000; /* Black background */
+    padding:0;
+    margin: 0;
+  }
+
+  /* Styling for navbar when expanded */
+  .navbar-expand-md .navbar-collapse.collapsing,
+  .navbar-expand-md .navbar-collapse.show {
+    background-color: #ffffff; /* White background */
+  }
+   /* Styling for navbar links when navbar is expanded */
+   .navbar-expand-md .navbar-collapse.collapsing .nav-link,
+   .navbar-expand-md .navbar-collapse.show .nav-link {
+     color: red; /* Black text color */
+   }
+
+   /* Show the chevron when the second list is expanded */
+#navbarTogglerDemo01.show + .navbar-chevron {
+    display: none;
+  }
+
+  .navbar-close-icon {
+    display: none; /* Initially hide the close icon */
+  }
+  .navbar-expand .navbar-toggler .navbar-toggler-icon {
+    display: none; /* Hide hamburger icon when navbar is expanded */
+  }
+  .navbar-expand .navbar-toggler .navbar-close-icon {
+    display: inline; /* Display close icon when navbar is expanded */
+  }
+
+  .navbar-nav i{
+    padding: 10px;
+  }
+
+  .status a{
+    color: inherit; /* Use the color inherited from the parent element */
+    text-decoration: none; /* Remove underlines */
+}
+
+.status {
+    width:100%;
+
+}
+  
+  .status-buttons{
+    display:flex;
+    width: 100%;
+  }
+  .coming-up{
+display: flex;
+  }
+
+  .wd-float-right{
+    margin-left: auto;
+  }
+
+  .lectures {
+    list-style-type: none;
+  }

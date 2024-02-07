@@ -1,0 +1,10 @@
+/* //Implement the paddings, margings and styles 
+//that would be used across multiple screens */
+body {
+    margin: 0;
+    padding: 0;
+  }
+  body * {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
