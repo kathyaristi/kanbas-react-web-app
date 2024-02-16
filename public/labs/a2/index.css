@@ -30,6 +30,13 @@
     background-color: yellow;
     color: blue;
  }
+ #qwe { 
+   color: blue; 
+ }
+ 
+ .asd { 
+   color: red; 
+ }
 
  .wd-fg-color-black { color: black; }
 .wd-fg-color-white { color: white; }
@@ -228,6 +235,22 @@
   }
   .wd-width-85px {
     width: 85px;
+  }
+  .box{
+   border: 2px solid red;
+   padding:10px;
+  }
+  .box ul li{
+   background-color:yellow; 
+
+  }
+
+  .qwe > .asd{
+   color:red
+  }
+
+  .qwe .zxc .xcv {
+   background-color: green;
   }
 
   .btn-primary.override-bs {
