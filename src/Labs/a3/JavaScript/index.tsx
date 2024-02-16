@@ -14,6 +14,7 @@ import ImpliedReturn from "./functions/ImpliedReturn";
 import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters";
 import WorkingWithArray from "./arrays/WorkingWithArrays";
 import AddingAndRemovingDataToFromArrays from "./arrays/AddingAndRemovingDataToFromArrays";
+import MapFunction from "./arrays/MapFunction";
 
 function JavaScript() {
    console.log('Hello World!');
@@ -31,7 +32,7 @@ function JavaScript() {
          <FunctionParenthesisAndParameters/>
          <WorkingWithArray/>
          <AddingAndRemovingDataToFromArrays/>
-
+         <MapFunction/>
          <House/>
          <Spreading/>
          <Destructing/>
