@@ -1,11 +1,11 @@
 [
-    { "_id": "A101", "title": "Propulsion Assignment", "course": "IS102" },
-    { "_id": "A102", "title": "Combustion Analysis", "course": "IS102" },
-    { "_id": "A103", "title": "Nozzle Design Project", "course": "IS102" },
-    { "_id": "A201", "title": "Aerodynamics Quiz", "course": "RS102" },
-    { "_id": "A202", "title": "Flow Analysis", "course": "RS102" },
-    { "_id": "A203", "title": "Heating Analysis", "course": "RS102" },
-    { "_id": "A301", "title": "Structural Design Task", "course": "RS103" },
-    { "_id": "A302", "title": "Orbital Calculations", "course": "RS103" },
-    { "_id": "A303", "title": "Systems Engineering Exam", "course": "RS103" }
+    { "_id": "A101", "title": "A1: Design Ideation", "course": "IS102" },
+    { "_id": "A102", "title": "A2: User Journey Mapping", "course": "IS102" },
+    { "_id": "A103", "title": "A3: Final Project Pitch", "course": "IS102" },
+    { "_id": "A201", "title": "A1: Writing Assignment 1", "course": "PSYC103" },
+    { "_id": "A202", "title": "A1: Writing Assignment 2", "course": "PSYC103" },
+    { "_id": "A203", "title": "A1: Writing Assignment 3", "course": "PSYC103" },
+    { "_id": "A301", "title": "A1: Set up Github", "course": "CS110" },
+    { "_id": "A302", "title": "A2: Create a Shell", "course": "CS110" },
+    { "_id": "A303", "title": "A3: Create a dictionary", "course": "CS110" }
   ]

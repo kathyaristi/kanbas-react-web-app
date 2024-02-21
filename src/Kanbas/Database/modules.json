@@ -1,116 +1,140 @@
 [
     {
       "_id": "M101",
-      "name": "Introduction to Rocket Propulsion",
+      "name": "Introduction to User Experience",
       "description": "Basic principles of rocket propulsion and rocket engines.",
       "course": "IS102",
       "lessons": [
         {
           "_id": "L101",
-          "name": "History of Rocketry",
-          "description": "A brief history of rocketry and space exploration.",
+          "name": "Who is our end user?",
+          "description": "Breaking down how we start defining the user experience.",
           "module": "M101"
         },
         {
           "_id": "L102",
-          "name": "Rocket Propulsion Fundamentals",
-          "description": "Basic principles of rocket propulsion.",
-          "module": "M101"
-        },
-        {
-          "_id": "L103",
-          "name": "Rocket Engine Types",
-          "description": "Overview of different types of rocket engines.",
+          "name": "Iterating desings",
+          "description": "Does this technology meet peoples needs",
           "module": "M101"
         }
       ]
     },
     {
       "_id": "M102",
-      "name": "Fuel and Combustion",
-      "description": "Understanding rocket fuel, combustion processes, and efficiency.",
+      "name": "Designing Usability",
+      "description": "Understanding why usability is important for human centered design.",
       "course": "IS102",
       "lessons": [
         {
           "_id": "L201",
-          "name": "Rocket Fuel",
-          "description": "Overview of different types of rocket fuels.",
+          "name": "What is usability",
+          "description": "Explains the importance of usability.",
           "module": "M102"
         },
         {
           "_id": "L202",
-          "name": "Combustion Processes",
-          "description": "Understanding combustion processes and efficiency.",
-          "module": "M102"
-        },
-        {
-          "_id": "L203",
-          "name": "Combustion Instability",
-          "description": "Understanding combustion instability and mitigation.",
+          "name": "Why is usability important",
+          "description": "The financial and social benefits of keeping users in mind.",
           "module": "M102"
         }
       ]
     },
     {
       "_id": "M103",
-      "name": "Nozzle Design",
+      "name": "Testing our Designs",
       "description": "Principles of rocket nozzle design and performance optimization.",
       "course": "IS102",
       "lessons": [
         {
           "_id": "L301",
-          "name": "Nozzle Design",
-          "description": "Overview of different types of rocket nozzles.",
+          "name": "User Testing sessions",
+          "description": "The importance of iterating and testing our designs.",
           "module": "M103"
         },
         {
           "_id": "L302",
-          "name": "Nozzle Performance",
-          "description": "Understanding nozzle performance and efficiency.",
-          "module": "M103"
-        },
-        {
-          "_id": "L303",
-          "name": "Nozzle Optimization",
-          "description": "Optimizing nozzle design for specific applications.",
+          "name": "Surveys",
+          "description": "How to conduct surveys and make useful questions.",
           "module": "M103"
         }
       ]
     },
     {
       "_id": "M201",
-      "name": "Fundamentals of Aerodynamics",
+      "name": "Memory",
       "description": "Basic aerodynamic concepts and fluid dynamics principles.",
-      "course": "RS102"
+      "course": "PSYC103",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Long term memory",
+          "description": "",
+          "module": "M103"
+        },
+        {
+          "_id": "L302",
+          "name": "Short term memory",
+          "description": "",
+          "module": "M103"
+        }
+      ]
     },
     {
       "_id": "M202",
-      "name": "Subsonic and Supersonic Flow",
-      "description": "Understanding subsonic and supersonic aerodynamic behaviors.",
-      "course": "RS102"
+      "name": "Attention",
+      "description": "What impacts our attention.",
+      "course": "PSYC103",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Inattentional blindness",
+          "description": "",
+          "module": "M103"
+        }]
     },
     {
       "_id": "M203",
-      "name": "Aerodynamic Heating",
-      "description": "Study of aerodynamic heating and thermal protection systems.",
-      "course": "RS102"
+      "name": "Perception",
+      "description": "How our environmental upbringings impact what we see.",
+      "course": "PSYC103"
     },
     {
       "_id": "M301",
-      "name": "Spacecraft Structural Design",
+      "name": "Assembly",
       "description": "Fundamentals of designing spacecraft structures and materials selection.",
-      "course": "RS103"
+      "course": "CS110",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Memory Addresses",
+          "description": "",
+          "module": "M103"
+        }]
+      
     },
     {
       "_id": "M302",
-      "name": "Orbital Mechanics",
+      "name": "File streams and Stack",
       "description": "Understanding orbital dynamics and mission planning.",
-      "course": "RS103"
+      "course": "CS110",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Stack and Allocating Memory",
+          "description": "",
+          "module": "M103"
+        },
+        {
+          "_id": "L301",
+          "name": "Pointers",
+          "description": "",
+          "module": "M103"
+        }]
     },
     {
       "_id": "M303",
-      "name": "Spacecraft Systems Engineering",
+      "name": "Concurrency",
       "description": "Overview of spacecraft systems and subsystems engineering.",
-      "course": "RS103"
+      "course": "CS110"
     }
   ]

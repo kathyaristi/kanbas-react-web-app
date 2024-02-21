@@ -1,5 +1,5 @@
 import React from "react";
-import { FaCheckCircle, FaEllipsisV, FaPlusCircle } from "react-icons/fa";
+import { FaCheckCircle, FaEllipsisV, FaPlusCircle, FaNewspaper } from "react-icons/fa";
 import { Link, useParams } from "react-router-dom";
 import { assignments } from "../../Database";
 function Assignments() {
@@ -41,16 +41,26 @@ function Assignments() {
           <ul className="list-group">
             {assignmentList.map((assignment) => (
               <li className="list-group-item">
+                <div>
                 <FaEllipsisV className="me-2" />
+                <FaNewspaper className="me-2" />
                 <Link
                   to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
                 >
                   {assignment.title}
                 </Link>
+                </div>
+                <div >
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Multiple Modules | 100 pts
+                
+                
                 <span className="float-end">
                   <FaCheckCircle className="text-success" />
                   <FaEllipsisV className="ms-2" />
                 </span>
+                </div>
+                
+                
               </li>
             ))}
           </ul>
