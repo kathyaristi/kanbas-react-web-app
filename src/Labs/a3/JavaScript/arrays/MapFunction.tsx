@@ -8,8 +8,8 @@ const cubes = numberArray1.map(a => a * a * a);
 
 return(     
     <div>
-       <h2>Working with Arrays</h2>
-       swaures= {numberArray1}<br/>
+       <h2>Map</h2>
+       squares= {numberArray1}<br/>
        cubes={cubes}<br/>
     </div>
  );}

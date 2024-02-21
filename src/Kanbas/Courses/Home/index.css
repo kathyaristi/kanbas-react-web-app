@@ -1,0 +1,26 @@
+
+.status a{
+    color: inherit; /* Use the color inherited from the parent element */
+       text-decoration: none; /* Remove underlines */
+   }
+   
+   .status {
+       width:100%;
+   
+   }
+     
+     .status-buttons{
+       display:flex;
+       width: 100%;
+     }
+     .coming-up{
+   display: flex;
+     }
+   
+     .wd-float-right{
+       margin-left: auto;
+     }
+   
+     .lectures {
+       list-style-type: none;
+     }

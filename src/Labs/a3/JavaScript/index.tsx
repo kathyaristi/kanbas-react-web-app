@@ -13,8 +13,8 @@ import FunctionDestructing from "./functions/FunctionDestructing";
 import ImpliedReturn from "./functions/ImpliedReturn";
 import FunctionParenthesisAndParameters from "./functions/FunctionParenthesisAndParameters";
 import WorkingWithArray from "./arrays/WorkingWithArrays";
-import AddingAndRemovingDataToFromArrays from "./arrays/AddingAndRemovingDataToFromArrays";
 import MapFunction from "./arrays/MapFunction";
+import TemplateLiterals from "./string/TemplateLiterals";
 
 function JavaScript() {
    console.log('Hello World!');
@@ -31,8 +31,7 @@ function JavaScript() {
          <ImpliedReturn/>
          <FunctionParenthesisAndParameters/>
          <WorkingWithArray/>
-         <AddingAndRemovingDataToFromArrays/>
-         <MapFunction/>
+     <TemplateLiterals/>
          <House/>
          <Spreading/>
          <Destructing/>

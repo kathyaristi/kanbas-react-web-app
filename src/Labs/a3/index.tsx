@@ -3,9 +3,10 @@ import PathParameters from "./routing/PathParameters";
 import Classes from "./Classes";
 import Styles from "./Styles";
 import ConditionalOutput from "./ConditionalOutput";
-import Highlight from "./Highlight";
 import Add from "./Add";
 import TodoItem from "./todos/TodoItem";
+import Highlight from "./Highlight";
+import TodoList from "./todos/TodoList";
 
 
 function Assignment3() {
@@ -13,8 +14,7 @@ function Assignment3() {
    <div>
      <h1>Assignment 3</h1>
      <ul className="list-group">
-        <TodoItem/>
-        <TodoItem todo={{title:"Buy bread",done:false, status: "InProgress"}}/>
+        <TodoList/>
      </ul>
      
      <Add a={3} b={4} />

@@ -23,12 +23,17 @@
     color: white;
     text-decoration: none;
   }
-  .wd-kanbas-navigation a i {
+  .rIcon{
     color: red;
     font-size: 2em;
     margin-bottom: 5px;
   }
-  
+  .wIcon{
+    color: white;
+    font-size: 2em;
+    margin-bottom: 5px;
+  }
+
   .wd-flex-row-container {
     display: flex;
     flex-direction: row;

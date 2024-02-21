@@ -23,7 +23,7 @@
     color: white;
     text-decoration: none;
   }
-  .wd-kanbas-navigation a i {
+  .wd-kanbas-navigation li {
     color: red;
     font-size: 2em;
     margin-bottom: 5px;
