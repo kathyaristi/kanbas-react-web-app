@@ -1,28 +1,13 @@
 import React from 'react';
-import logo from './logo.svg'; 
+import logo from './logo.svg';
 import './App.css';
-import Labs from './Labs';
-import HelloWorld from './Labs/a3/HelloWorld';
-import Kanbas from "./Kanbas";
-import { HashRouter,Link} from 'react-router-dom';
-import {Routes,Route,Navigate} from 'react-router';
 
 function App() {
   return (
-    <HashRouter>
-      <Link to="/Labs"> Labs</Link> |
-      <Link to="/Kanbas"> Kanbas</Link> |
-      <Link to="/Hello"> Hello</Link>
-
-      <Routes>
-      <Route path ="/" element ={<Navigate to="/Labs/a3"/>}/>
-
-        <Route path ="/Labs/*" element ={<Labs/>}/>
-        <Route path ="/Kanbas/*" element ={<Kanbas/>}/>
-        <Route path="/hello" element={<HelloWorld/>}/>
-    </Routes>
-    </HashRouter>
-  )
+    <div className="App">
+  
+    </div>
+  );
 }
 
 export default App;
