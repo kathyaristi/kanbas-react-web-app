@@ -1,4 +1,4 @@
-import { courses } from "../../Database/";
+import db from "../../Database/";
 import { Navigate, Route, Routes, useParams,useLocation } from "react-router-dom";
 import { HiMiniBars3, HiChevronRight } from "react-icons/hi2";
 import CourseNavigation from "../Navigation";
@@ -11,7 +11,7 @@ function BreadCrumbs() {
 
     const split = url.pathname.split("/");
     console.log(split);
-    const course = courses.find((course) => course._id === courseId);
+    const course = db.courses.find((course) => course._id === courseId);
   
     return (
       <div className="breadcrumbs">
