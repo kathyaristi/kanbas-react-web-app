@@ -12,6 +12,7 @@ function ModuleList() {
     name: "New Module",
     description: "New Description",
     course: courseId,
+    
   });
   const addModule = (module: any) => {
     const newModule = {
@@ -24,6 +25,17 @@ function ModuleList() {
   const deleteModule = (moduleId: string) => {
     const newModuleList = moduleList.filter(
       (module) => module._id !== moduleId );
+    setModuleList(newModuleList);
+  };
+
+  const updateModule = (module: any) => {
+    const newModuleList = moduleList.map((m) => {
+      if (m._id === module._id) {
+        return module;
+      } else {
+        return m;
+      }
+    });
     setModuleList(newModuleList);
   };
 
@@ -48,7 +60,9 @@ function ModuleList() {
       <ul className="list-group wd-modules">
         <li className="list-group-item">
           <button style={{display: "flex"}}onClick={() => { addModule(module) } } className="btn btn-primary">Add</button>
-          <input value={module.name}
+         
+
+         <input value={module.name}
             onChange={(e) => setModule({
               ...module, name: e.target.value
             })}
@@ -58,6 +72,9 @@ function ModuleList() {
               ...module, description: e.target.value
             })}
           />
+           {/* <button onClick={updateModule(module)}>
+                Update
+        </button> */}
         </li>
 
         {moduleList.filter((module) => module.course === courseId)
@@ -65,10 +82,16 @@ function ModuleList() {
             <li key={index}
               className="list-group-item"
               onClick={() => setModule(module)}>
+                <button className="btn btn-secondary"
+              onClick={(event) => { setModule(module); }}>
+              Edit
+            </button>
+
               <button style={{display: "flex", justifyContent: "center"}} className="btn btn-danger"
               onClick={() => deleteModule(module._id)}>
               Delete
             </button>
+            
 
               <div>
                 <FaEllipsisV className="me-2" />
@@ -81,7 +104,7 @@ function ModuleList() {
               </div>
               {module._id === module._id && (
                 <ul className="list-group">
-                  {module.lessons?.map((lesson, index) => (
+                  {module.lessons?.map((lesson: any, index: any) => (
                     <li className="list-group-item" key={index}>
                       <FaEllipsisV className="me-2" />
                       {lesson.name}
