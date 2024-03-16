@@ -18,6 +18,9 @@ function KanbasNavigation() {
   ];
   const { pathname } = useLocation();
   return (
+     
+    <div className="wd-flex-row-container">
+    <div className="d-none d-md-block">
     <ul className="wd-kanbas-navigation">
       <li>
      
@@ -38,6 +41,9 @@ function KanbasNavigation() {
       ))}
       
     </ul>
+
+    </div>
+    </div>
   );
 }
 export default KanbasNavigation;

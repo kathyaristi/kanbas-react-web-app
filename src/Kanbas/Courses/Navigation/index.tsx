@@ -6,6 +6,10 @@ function CourseNavigation() {
   const { courseId } = useParams();
  
   return (
+  
+  
+    <div className="d-flex">
+    <div className="d-none d-md-block">
     <ul className="wd-navigation"> 
 
       {links.map((link, index) => (
@@ -14,6 +18,10 @@ function CourseNavigation() {
         </li>
       ))}
     </ul>
+    </div>
+    </div>
   );
+
+ 
 }
 export default CourseNavigation;

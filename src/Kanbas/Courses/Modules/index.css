@@ -16,7 +16,7 @@
   border-left: none !important;
 }
 
-.wd-modules > li > div {
+.wd-modules > li {
   padding: 6px;
   border-left: 1px solid gray !important;
 }
@@ -43,7 +43,6 @@
 }
 
 .wd-modules button{
-  /* display: flex; */
   margin: 2px;
   padding-top: 3px;
   border-radius: 5px;
