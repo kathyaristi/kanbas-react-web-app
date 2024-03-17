@@ -15,6 +15,6 @@ function BreadCrumbs() {
   
     return (
       <div className="breadcrumbs">
-        <HiMiniBars3 className="hamburger" /> &nbsp; <span style={{ color: "red" }}>{course?.name}</span>  <HiChevronRight/>  {split.at(split.length-1)}
+        <span style={{ color: "red" }}>{course?.name}</span>  <HiChevronRight/>  {split.at(split.length-1)}
         </div> )};
         export default BreadCrumbs
