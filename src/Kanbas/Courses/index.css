@@ -1,0 +1,35 @@
+/* Styling for navbar when expanded */
+.navbar-expand-md .navbar-collapse.collapsing,
+.navbar-expand-md .navbar-collapse.show {
+  background-color: #ffffff; /* White background */
+}
+
+/* Styling for navbar links when navbar is expanded */
+.navbar-expand-md .navbar-collapse.collapsing .nav-link,
+.navbar-expand-md .navbar-collapse.show .nav-link {
+  color: red; /* Black text color */
+  background-color: white;
+  width:100%
+}
+
+/* Show the chevron when the second list is expanded */
+#navbarTogglerDemo01.show + .navbar-chevron {
+ display: none;
+}
+
+.navbar-close-icon {
+ display: none; /* Initially hide the close icon */
+}
+.navbar-expand .navbar-toggler .navbar-toggler-icon {
+ display: none; /* Hide hamburger icon when navbar is expanded */
+}
+.navbar-expand .navbar-toggler .navbar-close-icon {
+ display: inline; /* Display close icon when navbar is expanded */
+}
+
+.navbar-nav i{
+ padding: 10px;
+}
+.navbar{
+    padding: 0rem;
+}

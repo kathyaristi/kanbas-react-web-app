@@ -1,5 +1,5 @@
 import { Navigate, Route, Routes, useParams} from "react-router-dom";
-import { HiMiniBars3, HiChevronRight } from "react-icons/hi2";
+import {HiMiniBars3, HiChevronRight, HiUser, HiMiniAdjustmentsHorizontal,HiBookOpen,HiCalendar,HiEnvelope, HiClock,HiTv,HiBackward, HiQuestionMarkCircle, HiHome, HiMiniWindow, HiVideoCamera, HiClipboard, HiBanknotes, HiRocketLaunch, HiSquaresPlus, HiVideoCameraSlash, HiChatBubbleLeft, HiMicrophone, HiPaperClip, HiFolder, HiClipboardDocument, HiArrowRightCircle, HiCircleStack, HiBookmarkSquare, HiBookmark, HiCog} from "react-icons/hi2";
 import CourseNavigation from "./Navigation";
 import BreadCrumbs from "./BreadCrumbs";
 import Modules from "./Modules";
@@ -8,7 +8,7 @@ import Assignments from "./Assignments";
 import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
+import './index.css'
 
 function Courses({ courses }: { courses: any[]; }) {
   const { courseId, pages } = useParams();
@@ -27,16 +27,16 @@ function Courses({ courses }: { courses: any[]; }) {
 
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <ul className="wd-navigation">
-              <li><a href="/Kanbas/Account/Navigation/screen.html"> <i className="fa fa-user"></i> Account</a></li>
-              <li><a href="/Kanbas/Dashboard/screen.html"> <i className="fa fa-tachometer"></i>Dashboard</a></li>
-              <li><a href="/Kanbas/Courses/Home/screen.html"> <i className="fa fa-book"></i>Courses</a></li>
-              <li ><a href="/Kanbas/Calendar/screen.html"> <i className="fa fa-calendar"></i> Calendar</a></li>
-              <li><a href="/Kanbas/Inbox/screen.html"><i className="fa fa-envelope"></i> Inbox </a></li>
-              <li><a href="/Kanbas/History/screen.html"><i className="fa fa-history" aria-hidden="true"></i>
+              <li><a href="/Kanbas/Account/Navigation/screen.html"> <HiUser/> Account</a></li>
+              <li><a href="/Kanbas/Dashboard/screen.html"> <HiMiniAdjustmentsHorizontal/>Dashboard</a></li>
+              <li><a href="/Kanbas/Courses/Home/screen.html"> <HiBookOpen/>Courses</a></li>
+              <li ><a href="/Kanbas/Calendar/screen.html"> <HiCalendar/> Calendar</a></li>
+              <li><a href="/Kanbas/Inbox/screen.html"><HiEnvelope/> Inbox </a></li>
+              <li><a href="/Kanbas/History/screen.html"><HiClock/>
                 History</a></li>
-              <li><a href="/Kanbas/Studio/screen.html"><i className="fa fa-tv"></i> Studio</a></li>
-              <li><a href="/Kanbas/Commons/screen.html"> <i className="fa fa-backward"></i> Commons</a></li>
-              <li><a href="/Kanbas/Help/screen.html"> <i className="fa fa-question-circle" aria-hidden="true"></i>
+              <li><a href="/Kanbas/Studio/screen.html"><HiTv/> Studio</a></li>
+              <li><a href="/Kanbas/Commons/screen.html"> <HiBackward/> Commons</a></li>
+              <li><a href="/Kanbas/Help/screen.html"> <HiQuestionMarkCircle/>
                 Help</a></li>
       
             </ul>
@@ -51,32 +51,32 @@ function Courses({ courses }: { courses: any[]; }) {
             <ul className="navbar-nav">
               <li className="nav-item active">
                   <a className="nav-link" href="/Kanbas/Courses/Home/screen.html">
-                    <i className="fa fa-home"></i>Home</a></li>
+                    <HiHome/>Home</a></li>
                 <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Home/screen.html">
-                  <i className="fa fa-window-restore"></i> Modules</a></li>
+                  <HiMiniWindow/> Modules</a></li>
                 <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Piazza/index.html">
-                  <i className="fa fa-plug"></i>Piazza</a></li>
+                  <HiClipboard/>Piazza</a></li>
                 <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Zoommeetings/screen.html">
-                  <i className="fa fa-plug"></i>Zoom Meetings</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Assignments/screen.html"><i className="fa fa-sticky-note-o"></i>Assignments</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Quizzes/screen.html"><i className="fa fa-rocket"></i>Quizzes</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Grades/screen.html"><i className="fa fa-check-square"></i>Grades</a></li>
+                  <HiVideoCamera/>Zoom Meetings</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Assignments/screen.html"><HiBanknotes/>Assignments</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Quizzes/screen.html"><HiRocketLaunch/>Quizzes</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Grades/screen.html"><HiSquaresPlus/>Grades</a></li>
     
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/People/screen.html"><i className="fa fa-users"></i>People</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/People/screen.html"><HiUser/>People</a></li>
     
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Panoptovideo/screen.html"><i className="fa fa-video-camera"></i>Panopto Video</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Panoptovideo/screen.html"><HiVideoCameraSlash/>Panopto Video</a></li>
     
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Discussions/screen.html"><i className="fa fa-comment"></i>Discussions</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Discussions/screen.html"><HiChatBubbleLeft/>Discussions</a></li>
     
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Announcements/screen.html"><i className="fa fa-microphone"></i>Announcements</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Announcements/screen.html"><HiMicrophone/>Announcements</a></li>
     
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Pages/screen.html"><i className="fa fa-file-text"></i>Pages</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Files/screen.html"><i className="fa fa-folder"></i>Files</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Rubrics/screen.html"><i className="fa fa-clipboard"></i>Rubrics</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Outcomes/screen.html"><i className="fa fa-bullseye"></i>Outcomes</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Collaborations/screen.html"><i className="fa fa-circle-thin"></i>Collaborations</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Syllabus/screen.html"><i className="fa fa-address-book-o"></i>Syllabus</a></li>
-                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Settings/screen.html"><i className="fa fa-cog"></i>Settings</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Pages/screen.html"><HiPaperClip/>Pages</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Files/screen.html"><HiFolder/>Files</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Rubrics/screen.html"><HiClipboardDocument/>Rubrics</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Outcomes/screen.html"><HiArrowRightCircle/>Outcomes</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Collaborations/screen.html"><HiCircleStack/>Collaborations</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Syllabus/screen.html"><HiBookmark/>Syllabus</a></li>
+                <li className="nav-item"><a className="nav-link" href="/Kanbas/Courses/Settings/screen.html"><HiCog/>Settings</a></li>
     
             </ul>
           </div>
@@ -92,14 +92,12 @@ function Courses({ courses }: { courses: any[]; }) {
        <CourseNavigation />
       </div>
   
-        <div
-          // style={{ left: "320px", top: "90px" }}
-        >
+        <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="Home" element={<Home/>} />
             <Route path="Modules" element={<Modules />} />
-            {/* <Route path="Piazza" element={<h1>Piazza</h1>} /> */}
+            <Route path="Piazza" element={<h1>Piazza</h1>} />
             <Route path="Assignments" element={<Assignments />} />
             <Route
               path="Assignments/:assignmentId"
